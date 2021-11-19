@@ -185,7 +185,7 @@ public class Main
         String output = "";
         char temp;
         if (n < 0) // Bez tego program nie działa poprawinie, na przykład python tego nie potrzebuje
-            n += 26;
+            n += (n/(-26) + 1)*26;
         for (int i = 0; i < x.length(); i++)
             output += (char)(((int)(x.charAt(i)) + n - 97) % 26 + 97);
         System.out.println(x + "\n zamienia sie w:");
