@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Lab4.src.com.company;
 
 class Figura
 {

@@ -1,10 +1,10 @@
-package com.company;
+package com.company.Lab3;
 import java.util.Random;
 import java.util.Scanner;
 
 import static java.lang.Math.abs;
 
-public class Main
+public class Lab3
 {
     public static void main(String[] args)
     {

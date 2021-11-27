@@ -1,4 +1,4 @@
-package zad2;
+package com.company.Lab4.src.zad2;
 
 import java.util.Random;
 

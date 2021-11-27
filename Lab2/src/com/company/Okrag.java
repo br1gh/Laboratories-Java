@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Lab2.src.com.company;
 public class Okrag {
     Punkt srodek;
     int promien;
