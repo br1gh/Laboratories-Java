@@ -19,7 +19,7 @@ public class Okrag {
     }
 
     public double getPowierzchnia() {
-        return 3.14*Math.pow(this.promien,2);
+        return Math.PI*Math.pow(this.promien,2);
     }
 
     public double getSrednica() {
@@ -32,5 +32,16 @@ public class Okrag {
 
     public boolean wSrodku(Punkt punkcik){
         return Math.pow(punkcik.x - srodek.x,2) + Math.pow(punkcik.y - srodek.y,2) < Math.pow(promien,2);
+    }
+    public static void opiany(Rectangle rect)
+    {
+        Punkt p1 = new Punkt(0,0);
+        Okrag oo = new Okrag(p1,rect.Diagonal());
+    }
+
+    public static void wpiany(Rectangle rect)
+    {
+        Punkt p2 = new Punkt(0,0);
+        Okrag oo = new Okrag(p2, (int)(rect.height/2));
     }
 }

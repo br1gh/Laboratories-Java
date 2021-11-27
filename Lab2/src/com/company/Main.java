@@ -42,6 +42,15 @@ public class Main {
         System.out.println(num.add(num2));
         System.out.println(num.subtract(num2));
 
+        Punkt p1 = new Punkt(0,0);
+        Punkt p2 = new Punkt(3,4);
         Okrag okrag1 = new Okrag();
+        Okrag okrag2 = new Okrag(p1,5);
+        Okrag okrag3 = new Okrag(p1,10.0);
+
+        System.out.println(okrag1.getPowierzchnia());
+        System.out.println(okrag1.getSrednica());
+        System.out.println(okrag1.getPromien());
+        System.out.println(okrag1.wSrodku(p2));
     }
 }
