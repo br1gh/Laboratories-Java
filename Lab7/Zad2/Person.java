@@ -9,19 +9,22 @@ public class Person
     private String name;
     private String email;
     private String phoneNumber;
+    private String address;
     private LocalDate dateOfBirth;
 
-    public Person(String name, String email, String phoneNumber, LocalDate dateOfBirth) {
+    public Person(String name, String email, String phoneNumber, String address, LocalDate dateOfBirth) {
         this.name = name;
         this.email = email;
         this.phoneNumber = phoneNumber;
+        this.address = address;
         this.dateOfBirth = dateOfBirth;
     }
 
-    public Person(String name, String email, String phoneNumber, String dateOfBirth) {
+    public Person(String name, String email, String phoneNumber, String address, String dateOfBirth) {
         this.name = name;
         this.email = email;
         this.phoneNumber = phoneNumber;
+        this.address = address;
         this.setDateOfBirth(dateOfBirth);
     }
 
@@ -61,6 +64,14 @@ public class Person
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public LocalDate getDateOfBirth() {
